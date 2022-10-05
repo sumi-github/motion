@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    color: black;
+    font-size: 16px;
+    font-family: 'pretendard';
+    line-height: 24px;
+    min-width: 1320px;
+}
+
+#header {
+    background: url(../images/brand/bg1.jpg) no-repeat 50% 0;
+    height: 585px;
+}
+
+.nav {
+    width: 716px;
+    margin: 0 auto;
+    height: 82px;
+    left: 50%;
+}
+.nav li img{
+    padding: 0 20px;
+}
+.nav ul {
+    text-align: center;
+}
+
+.nav li {
+    float: left;
+    padding: 20px;
+    margin-top: 27px;
+}
+
+.nav a {
+    opacity: 0.5;
+    font-size: 18px;
+    font-weight: bold;
+    color: #358691;
+    padding: 20px 8px;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+.nav li:nth-child(3){
+    margin-top: 0;
+    }
+
+.re {
+    width: 479px;
+    height: 330px;
+    color: white;
+    line-height: 40px;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    margin-left: -650px;
+}
+
+.re h1 {
+    font-size: 60px;
+    padding-left: 75px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    padding-bottom: 13px;
+    line-height: 60px;
+}
+
+.re p {
+    text-align: center;
+    padding-top: 13px;
+    font-size: 26px;
+}
+
+#hover{
+    width: 998px;
+    height: 1120px;
+    margin: 0 auto;
+}
+#hover h3{
+    text-align: center;
+    color: #86a9bd;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 70px;
+    padding: 70px 0;
+}
+#hover_inner{
+    margin: 0 auto;
+}
+.left_top{
+    float: left;
+    width: 447px;
+    height: 425px;
+}
+.right_top{
+    float: right;
+    width: 540px;
+    height: 425px;
+}
+.hover_inner div {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+
+}
+.hover_inner div img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.hover_inner div:hover img:nth-child(1){
+    opacity: 0;
+}
+
+.hover_inner div img{
+    transition: all 1.5s;
+}
+
+.hover_inner div:hover img{
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+.bg2{
+    height: 600px;
+    background: url(../images/brand/bg2logo.jpg) no-repeat 50% 0 fixed;
+    position: relative;
+}
+.bg2 p{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-top: 278px;
+    margin-left: -200px;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+}
+.logo{
+    width: 1320px;
+    height: 930px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo h3{
+    color: #86a9bd;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 70px;
+    padding: 70px 0;
+}
+.logo img{
+    margin-left: -280px;
+    padding-top: 90px;
+}
+.logo p{
+    line-height: 26px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.logo p:nth-child(3){
+    position: absolute;
+    left: 162px;
+    top: 265px;
+    font-size: 16px;
+}
+.logo p:nth-child(4){
+    position: absolute;
+    left: 21px;
+    top: 382px;
+    font-size: 16px;
+}
+.logo p:nth-child(5){
+    position: absolute;
+    left: 864px;
+    top: 298px;
+    font-size: 16px;
+}
+.color{
+    width: 1170px;
+    height: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+.color h3{
+    color: #86a9bd;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 100px;
+    padding: 70px 0;
+}
+.color ul{
+    margin: 100px auto;
+    height: 500px;
+}
+.color_inner ul li{
+    float: left;
+    width: 378px;
+    height: 494px;
+    position: relative;
+    overflow: hidden;
+}
+.color_inner li:nth-child(2){
+    margin: 0 15px;
+}
+.color_inner li:hover img{
+    transform: scale(1.1, 1.1);
+}
+.color_inner li img{
+    transition: all 1s;
+}
+.box1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(214, 239, 245, 1);
+    width: 100%;
+    height: 494px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.color_inner li:hover .box1{
+    opacity: 1;
+}
+.box1.bg4{
+    background-color: rgba(136, 215, 229, 1);
+}
+.box1.bg5{
+    background-color: rgba(83, 146, 188, 1);
+}
+.box1>p{
+    padding-top: 230px;
+    font-size: 16px;
+}
+.box1 h4{
+    padding-top: 3px;
+    font-size: 24px;
+}
+.hand{
+    height: 410px;
+    background: url(../images/brand/bg3fixed.jpg) no-repeat 50% 0 fixed;
+}
+.hand p{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 165px;
+}
+.map{
+    text-align: center;
+    margin: 0 auto;
+}
+.map h3{
+    color: #86a9bd;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 100px;
+    padding: 70px 0;
+}
+.bus{
+    margin-top: 80px;
+}
+.right ul{
+    margin-right: 30px;
+    float: left;
+}
+.right li:nth-child(2){
+    padding: 15px 0;
+}
+.sns a{
+    display: inline-block;
+    margin-left: 10px;
+    opacity: 0.5;/*반투명*/
+}
+.sns a:hover{
+    opacity: 1;/*선명*/
+}
+.box h3{
+    padding: 5px 0;
+    padding-top: 10px;
+}
+.box h1{
+    padding-top: 150px;
+}
+#footer{
+    margin-top: 70px;
+    background: url(../images/main/footer.jpg) no-repeat 50% 0;
+    height: 479px;
+    position: relative;
+}
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    color: #fff;
+}
+.left{
+    position: absolute;
+    float: left;
+    width: 602px;
+    top: 50%;
+    margin-top: -120px;
+}
+.left p{
+    padding-top: 80px;
+    line-height: 30px;
+}
+.left img{
+    padding-right: 30px;
+}
+.right{
+    float: right;
+    width: 550px;
+    top: 50%;
+    margin-top: 170px;
+    margin-right: 0;
+}
+.right p{
+    line-height: 25px;
+}
+.right p:nth-child(3){
+    padding-top: 23px;
+}
+.right p:nth-child(4){
+    padding-top: 26px;
+}
+.sns{
+    position: absolute;
+    top: 85%;
+    right: 50%;
+    margin-right: -540px;
+}
+.footer_logo{
+    float: left;
+}

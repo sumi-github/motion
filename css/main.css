@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    color: black;
+    font-size: 16px;
+    font-family: 'pretendard';
+    line-height: 24px;
+    min-width: 1320px;
+}
+#header{
+    height: 547px;
+    background: url(../images/main/bg1.jpg) no-repeat 50% 0;
+}
+.header_inner{
+    padding-top: 60px;
+    text-align: center;
+    width: 1320px;
+    margin: 0 auto;
+}
+.header_inner h1{
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 36px;
+    font-weight: 600;
+}
+.header_inner h1, .header_inner img{
+    padding-bottom: 40px;
+}
+.header_inner p{
+    color: white;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav{
+    width: 836px;
+    height: 240px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.nav ul{
+    text-align: center;
+}
+.nav li{
+   float: left;
+   margin-top: 33px;
+   padding-top: 55px;
+}
+.nav li img{
+    padding: 0 20px;
+}
+.nav li a{
+    opacity: 0.5;
+}
+.nav li a:hover{
+    opacity: 1;
+}
+.nav li:nth-child(3){
+margin-top: 0;
+}
+.nav a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #358691;
+    padding: 0 40px;
+}
+#center{
+    background: url(../images/main/bg2.jpg) no-repeat 50% 0;
+    height: 431px;
+}
+#center h2{
+    color: white;
+    padding-left: 39%;
+    padding-top: 60px;
+    font-size: 42px;
+    font-weight: 300;
+}
+.fragrance{
+    width: 1320px;
+    margin: 0 auto;
+}
+.fragrance ul{
+    margin-top: 180px;
+}
+.fragrance li{
+    padding: 0 85px;
+    text-align: center;
+    float: left;
+}
+@keyframes ani{
+    0%{transform: rotate(0);}
+    50%{transform: rotate(-5deg);}
+    90%{transform: rotate(-5deg);}
+    95%{transform: rotate(-3deg);}
+    98%{transform: rotate(-1deg);}
+    100%{transform: rotate(0);}
+}
+.fragrance li:hover img{
+    animation: ani 0.4s linear;
+    transform-origin: bottom;
+}
+#series{
+    background: url(../images/main/bg3.jpg) no-repeat 50% 0;
+    height: 1200px;
+    margin-top: 350px;
+    text-align: center;
+}
+#series ul{
+    width: 700px;
+    height: 1000px;
+}
+.hover{
+    height: 600px;
+}
+.hover h2{
+    color: white;
+    font-weight: 300;
+    font-size: 36px;
+    padding-top: 50px;
+}
+.hover_inner{
+    margin: 0 auto;
+    width: 1000px;
+}
+.left_top{
+    float: left;
+    width: 336px;
+    height: 458px;
+}
+.right_top{
+    float: right;
+    width: 336px;
+    height: 458px;
+}
+.hover_inner div {
+    position: relative;
+    margin-top: 70px;
+}
+.hover_inner div img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.hover_inner div img{
+    transition: all 1s;
+}
+
+.hover_inner div:hover img{
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+#under{
+    margin-top: 20px;
+    height: 600px;
+}
+#under ul{
+    width: 1320px;
+    margin: 250px auto;
+    height: 300px;
+}
+.under_inner ul li{
+    float: left;
+    width: 426px;
+    height: 386px;
+    position: relative;
+    overflow: hidden;
+}
+.under_inner ul li:nth-child(2){
+    margin: 0 20px;
+}
+.under_inner li:hover img{
+    transform: scale(1.2, 1.2);
+}
+.under_inner li img{
+    transition: all 1s;
+}
+.box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 386px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.under_inner li:hover .box{
+    opacity: 1;
+}
+.logo{
+    float: left;
+}
+.right ul{
+    margin-right: 30px;
+    float: left;
+}
+.right li:nth-child(2){
+    padding: 15px 0;
+}
+.sns a{
+    display: inline-block;
+    margin-left: 10px;
+    opacity: 0.5;/*반투명*/
+}
+.sns a:hover{
+    opacity: 1;/*선명*/
+}
+.box h3{
+    padding: 5px 0;
+    padding-top: 10px;
+}
+.box h1{
+    padding-top: 150px;
+}
+#footer{
+    background: url(../images/main/footer.jpg) no-repeat 50% 0;
+    height: 479px;
+    position: relative;
+}
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    color: #fff;
+}
+.left{
+    position: absolute;
+    float: left;
+    width: 602px;
+    top: 50%;
+    margin-top: -120px;
+}
+.left p{
+    padding-top: 80px;
+    line-height: 30px;
+}
+.left img{
+    padding-right: 30px;
+}
+.right{
+    float: right;
+    width: 550px;
+    top: 50%;
+    margin-top: 170px;
+    margin-right: 0;
+}
+.right p{
+    line-height: 25px;
+}
+.right p:nth-child(3){
+    padding-top: 23px;
+}
+.right p:nth-child(4){
+    padding-top: 26px;
+}
+.sns{
+    position: absolute;
+    top: 85%;
+    right: 50%;
+    margin-right: -540px;
+}

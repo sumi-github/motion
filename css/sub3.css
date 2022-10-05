@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    color: black;
+    font-size: 20px;
+    font-family: 'pretendard';
+    line-height: 28px;
+    min-width: 1320px;
+}
+
+.header_inner {
+    background: url(../images/custom/bg1.jpg) no-repeat 50% 0;
+    height: 528px;
+}
+
+.nav {
+    width: 753px;
+    margin: 0 auto;
+    height: 120px;
+    left: 50%;
+}
+
+.nav li img {
+    padding: 0 20px;
+}
+
+.nav ul {
+    text-align: center;
+}
+
+.nav li {
+    float: left;
+    padding: 20px;
+    margin-top: 27px;
+}
+
+.nav a {
+    opacity: 0.5;
+    font-size: 18px;
+    font-weight: bold;
+    color: #358691;
+    padding: 20px 8px;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+
+.nav li:nth-child(3) {
+    margin-top: 0;
+}
+
+.header_inner p, .header_inner a{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.header_inner p:nth-child(1) {
+    line-height: 48px;
+    padding-top: 155px;
+}
+
+.header_inner a {
+    border: 1px solid white;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.7s;
+}
+.header_inner a b{
+    position: relative;
+    z-index: 2;
+}
+
+/*버블만들기*/
+.header_inner a span{
+    display: inline-block;
+    width: 25%;/*100% 나누기 버블 갯수 만큼*/
+    height: 100%;
+    background-color: #a4d2f0;
+    position: absolute;
+    top: 110%;
+    border-radius: 50%;/*원형으로 만들기*/
+    transition: all 0.7s;/*서서히 변하게 만들기*/
+}
+.header_inner a span:nth-child(2){
+    left: 0;
+    transition-delay: 0s;/*트랜지션 딜레이*/
+}
+.header_inner a span:nth-child(3){
+    left: 30%;
+    transition-delay: 0.1s;
+}
+.header_inner a span:nth-child(4){
+    left: 60%;
+    transition-delay: 0.2s;
+}
+.header_inner a span:nth-child(5){
+    left: 90%;
+    transition-delay: 0.3s;
+}
+
+/*호버효과*/
+.header_inner a:hover span{
+    transform: scale(1.6, 1.6);
+    top: 0;
+}
+
+h4{
+    padding: 20px 0;
+    font-size: 28px;
+    padding-bottom: 40px;
+}
+#one{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+#one li{
+    float: left;
+}
+#one li:nth-child(2){
+    padding: 0 50px;
+}
+#two{
+    width: 700px;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+#two li{
+    float: left;
+}
+#two li:nth-child(1), #two li:nth-child(3){
+    padding-right: 50px;
+}
+#three{
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+#three li{
+    float: left;
+}
+#three li:nth-child(2), #three li:nth-child(5){
+    padding: 0 50px;
+}
+#four{
+    width: 700px;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+#four li{
+    float: left;
+}
+#four li:nth-child(1), #four li:nth-child(3){
+    padding-right: 50px;
+}
+#five{
+    width: 760px;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.button1 li:hover a{
+    background-color: #9bdae7;
+    color: #fff;
+}
+
+#button{
+    width: 1100px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.button1{
+    width: 100%;
+    position: relative;
+}
+.button1 a{
+    font-size: 24px;
+    border: 1px solid #9bdae7;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 70px;
+    position: absolute;
+}
+.button1 a:hover{
+    color: white;
+    background-color: #9bdae7;
+}
+
+.button1 a:nth-child(1){
+    top: 0;
+    left: 0;
+}
+.button1 a:nth-child(2){
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    
+}
+.button1 a:nth-child(3){
+    top: 0;
+    right: 0;
+}
+
+#footer{
+    margin-top: 70px;
+    background: url(../images/main/footer.jpg) no-repeat 50% 0;
+    height: 479px;
+    position: relative;
+}
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    color: #fff;
+}
+.left{
+    position: absolute;
+    float: left;
+    width: 627px;
+    top: 50%;
+    margin-top: -120px;
+}
+.left p{
+    padding-top: 80px;
+    line-height: 30px;
+}
+.left img{
+    padding-right: 30px;
+}
+.right{
+    float: right;
+    width: 550px;
+    margin-top: 170px;
+    margin-right: 0;
+}
+.right li{
+    width: 45px;
+}
+.right p{
+    line-height: 25px;
+}
+.right ul{
+    margin-right: 30px;
+    float: left;
+}
+.right li:nth-child(2){
+    padding: 15px 0;
+}
+.right p:nth-child(3){
+    padding-top: 23px;
+}
+.right p:nth-child(4){
+    padding-top: 26px;
+}
+.sns{
+    position: absolute;
+    top: 85%;
+    right: 50%;
+    margin-right: -540px;
+}
+.sns a{
+    display: inline-block;
+    margin-left: 10px;
+    opacity: 0.5;/*반투명*/
+}
+.sns a:hover{
+    opacity: 1;/*선명*/
+}
+.footer_logo{
+    float: left;
+}
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+  }
